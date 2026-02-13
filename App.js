@@ -1,14 +1,6 @@
 import React, { useState } from 'react';
 import { StatusBar } from 'expo-status-bar';
-import {
-  StyleSheet,
-  Text,
-  View,
-  TextInput,
-  TouchableOpacity,
-  ScrollView,
-  Dimensions,
-} from 'react-native';
+import {StyleSheet,Text,View,TextInput,TouchableOpacity,ScrollView,Dimensions,} from 'react-native';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 const { width } = Dimensions.get('window');
@@ -28,7 +20,7 @@ export default function App() {
             <MaterialCommunityIcons
               name="school"
               size={40}
-              color="#7C3AED"
+              color="#4e0cc0"
             />
           </View>
         </View>
@@ -70,11 +62,10 @@ export default function App() {
               />
               <TextInput
                 style={styles.inputPassword}
-                placeholder="●●●●●●●●"
+                placeholder="********"
                 placeholderTextColor="#ccc"
                 value={password}
                 onChangeText={setPassword}
-                secureTextEntry={!showPassword}
               />
               <TouchableOpacity
                 onPress={() => setShowPassword(!showPassword)}
@@ -132,7 +123,7 @@ export default function App() {
             </TouchableOpacity>
           </View>
           <View style={styles.signupContainer}>
-            <Text style={styles.signupText}>Não tem uma conta? </Text>
+            <Text style={styles.signupText}>Não tem uma conta?</Text>
             <TouchableOpacity>
               <Text style={styles.signupLink}>Cadastre-se</Text>
             </TouchableOpacity>
@@ -226,7 +217,7 @@ const styles = StyleSheet.create({
     fontWeight: '500',
   },
   button: {
-    backgroundColor: '#7C3AED',
+    backgroundColor: '#4f11b9',
     height: 50,
     borderRadius: 12,
     flexDirection: 'row',
@@ -235,8 +226,6 @@ const styles = StyleSheet.create({
     marginBottom: 24,
     shadowColor: '#7C3AED',
     shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.3,
-    shadowRadius: 12,
     elevation: 8,
   },
   buttonText: {
@@ -286,7 +275,7 @@ const styles = StyleSheet.create({
     fontSize: 14,
   },
   signupLink: {
-    color: '#7C3AED',
+    color: '#5608db',
     fontSize: 14,
     fontWeight: '600',
   },
